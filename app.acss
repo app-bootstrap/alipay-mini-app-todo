@@ -1,0 +1,42 @@
+.container {
+  padding: 30rpx;
+}
+
+.main {
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.header {
+  padding: 0 60rpx;
+}
+
+.main-input {
+  height: 60rpx;
+  border: 1px solid #eee;
+  border-radius: 60rpx;
+  padding-left: 24rpx;
+  display: block;
+}
+
+.icon {
+  float: left;
+  margin-top: 5rpx;
+  opacity: 0.6;
+}
+
+.item {
+  margin-top: 24rpx;
+}
+
+.content {
+  font-size: 45rpx;
+  margin-left: 15rpx;
+  color: #666;
+}
+
+.remove {
+  float: right;
+  margin-top: 5rpx;
+  opacity: 0.3;
+}

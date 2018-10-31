@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <form>
+      <input
+        maxlength="{{inputMaxLength}}"
+        placeholder="What's your todo?"
+        onConfirm="confirmTodo"
+        onInput="onInput"
+        class="main-input"
+        type="text"
+        value="{{value}}"
+        controlled
+      />
+    </form>
+  </view>
+  <view class="main">
+    <view
+      class="item"
+      a:for="{{todos}}"
+    >
+      <view
+        onTap="changeTodo"
+        data-id="{{item.id}}"
+      >
+        <icon
+          type="{{item.state === 'completed' ? 'success_no_circle' : 'waiting'}}"
+          size="20"
+          class="icon"
+        />
+      </view>
+      <text class="content">{{item.content}}</text>
+      <view
+        data-id="{{item.id}}"
+        onTap="removeTodo"    
+        class="remove"
+      >
+        <icon
+          type="cancel"
+        />
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+  </view>
+</view>
